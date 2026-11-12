@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Support // Tailwear</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+<body class="bg-neutral-950 font-mono text-neutral-200 selection:bg-orange-500 selection:text-neutral-950">
+
+  <input id="menu-toggle" type="checkbox" class="peer sr-only" aria-label="Open or close menu" />
+
+  <!-- HEADER -->
+  <header class="fixed inset-x-0 top-0 z-40 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/80">
+    <nav class="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-4 md:px-8"
+      aria-label="Main Navigation">
+
+      <div class="flex items-center gap-4 justify-self-start">
+        <label for="menu-toggle" class="cursor-pointer rounded p-1 text-white hover:text-orange-500 transition-colors" aria-hidden="true">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M4 7h16M4 12h10M4 17h16" />
+          </svg>
+        </label>
+
+        <a href="../index.html" class="font-['UnifrakturCook'] text-3xl leading-none text-white hover:text-orange-500 transition-colors">Tailwear</a>
+      </div>
+
+      <ul class="hidden items-center gap-10 text-xs uppercase tracking-[0.2em] md:flex">
+        <li><a href="../index.html" class="transition-colors hover:text-orange-500">Home</a></li>
+        <li><a href="../index.html#shop" class="transition-colors hover:text-orange-500">Shop</a></li>
+        <li><a href="../index.html#collections" class="transition-colors hover:text-orange-500">Collections</a></li>
+        <li><a href="about_us.html" class="transition-colors hover:text-orange-500">About</a></li>
+        <li><a href="contact_us.html" class="text-orange-500 transition-colors">Contact</a></li>
+      </ul>
+
+      <div class="justify-self-end">
+        <a href="#cart" class="relative inline-block rounded p-1 text-white hover:text-orange-500 transition-colors"
+          aria-label="Cart">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 8h12l-1 12H7L6 8Z" />
+            <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SIDEBAR OVERLAY -->
+  <label for="menu-toggle" class="pointer-events-none fixed inset-0 z-50 bg-black/70 opacity-0 transition-opacity duration-300 peer-checked:pointer-events-auto peer-checked:opacity-100"
+    aria-hidden="true">
+  </label>
+
+  <!-- SIDEBAR MENU -->
+  <aside class="fixed inset-y-0 left-0 z-50 flex w-72 max-w-[85%] -translate-x-full flex-col bg-neutral-950 border-r border-neutral-800 px-6 py-5 transition-transform duration-300 peer-checked:translate-x-0"
+    aria-label="Sidebar Menu">
+    <div class="flex items-center justify-between pb-6 border-b border-neutral-800">
+      <span class="font-['UnifrakturCook'] text-3xl text-white">Tailwear</span>
+      <label for="menu-toggle" class="cursor-pointer rounded p-1 text-white hover:text-orange-500" aria-hidden="true">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </label>
+    </div>
+
+    <ul class="flex flex-col text-xs uppercase tracking-[0.2em] mt-6 space-y-4">
+      <li><a href="../index.html" class="block py-2 hover:text-orange-500 border-b border-neutral-900">Home</a></li>
+      <li><a href="../index.html#shop" class="block py-2 hover:text-orange-500 border-b border-neutral-900">Shop</a></li>
+      <li><a href="../index.html#collections" class="block py-2 hover:text-orange-500 border-b border-neutral-900">Collections</a></li>
+      <li><a href="about_us.html" class="block py-2 hover:text-orange-500 border-b border-neutral-900">About</a></li>
+      <li><a href="contact_us.html" class="block py-2 text-orange-500 border-b border-neutral-900">Contact us</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT: CONTACT / TRIBE COMMUNICATION -->
+  <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+    
+    <!-- Header Section -->
+    <div class="border-b border-neutral-800 pb-12 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-2.5 h-2.5 bg-orange-600 inline-block"></span>
+          <span class="text-xs text-orange-500 tracking-widest uppercase">DOC-ID: TW-CNT-2026 // TRIBE CHANNEL</span>
+        </div>
+        <h1 class="text-5xl sm:text-6xl md:text-8xl font-normal text-white tracking-tight" style="font-family: 'UnifrakturMaguntia', serif;">
+          Contact Us
+        </h1>
+      </div>
+      <div class="text-right text-xs text-neutral-400 tracking-widest uppercase">
+        <span>DIRECT COMM // NO INTERMEDIARIES</span>
+      </div>
+    </div>
+
+    <!-- Grid Layout: Support Info vs Form -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      
+      <!-- Left Column: Soporte Técnico y Consultas & Vínculo con la Comunidad -->
+      <div class="lg:col-span-5 space-y-8">
+        
+        <!-- Technical Support Box -->
+        <div class="border border-neutral-800 bg-neutral-900/40 p-6 space-y-6">
+          <div class="flex items-center justify-between border-b border-neutral-800 pb-3">
+            <h3 class="text-xs text-orange-500 tracking-widest uppercase">Technical Support & Inquiries</h3>
+            <span class="text-[10px] text-neutral-500">SEC-01</span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed font-sans">
+            Direct communication channels for closed batch logistics, material specifications, and assistance regarding your urban armor.
+          </p>
+          <div class="space-y-4 text-xs font-mono">
+            <div class="flex justify-between items-center py-2 border-b border-neutral-800/60">
+              <span class="text-neutral-500">DISPATCH / BATCHES</span>
+              <span class="text-neutral-200">batches@tailwear.com</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-800/60">
+              <span class="text-neutral-500">TECHNICAL ASSIST</span>
+              <span class="text-neutral-200">support@tailwear.com</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-neutral-500">RESPONSE WINDOW</span>
+              <span class="text-orange-500">&lt; 24 WORKING HOURS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tribe & Community Link Box -->
+        <div class="border border-neutral-800 bg-neutral-900/40 p-6 space-y-6">
+          <div class="flex items-center justify-between border-b border-neutral-800 pb-3">
+            <h3 class="text-xs text-orange-500 tracking-widest uppercase">Tribe & Community Link</h3>
+            <span class="text-[10px] text-neutral-500">SEC-02</span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed font-sans">
+            For independent creators, asphalt documentarians, and profiles sharing our uncompromising stance against fast fashion.
+          </p>
+          <div class="pt-2">
+            <a href="mailto:tribe@tailwear.com" class="inline-flex items-center gap-3 text-xs text-neutral-200 hover:text-orange-500 transition-colors uppercase tracking-widest">
+              <span>// APPLY FOR TRIBE ALLIANCE</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Interactive Contact Form -->
+      <div class="lg:col-span-7">
+        <div class="border border-neutral-800 bg-neutral-900/30 p-8 md:p-10 relative">
+          
+          <div class="absolute top-0 right-0 bg-orange-600 text-neutral-950 font-mono text-[10px] tracking-widest uppercase px-3 py-1 font-bold">
+            SECURE FORM
+          </div>
+
+          <form action="#" method="POST" class="space-y-6 mt-2">
+            
+            <div class="space-y-2">
+              <label for="name" class="block text-xs uppercase tracking-widest text-neutral-400">
+                Full Name / Alias <span class="text-orange-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                placeholder="e.g., Alex Mercer" 
+                class="w-full bg-neutral-950 border border-neutral-800 px-4 py-3 text-sm text-neutral-200 focus:outline-none focus:border-orange-500 transition-colors font-mono"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label for="email" class="block text-xs uppercase tracking-widest text-neutral-400">
+                Secure Email <span class="text-orange-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                placeholder="e.g., alex@asphalt.net" 
+                class="w-full bg-neutral-950 border border-neutral-800 px-4 py-3 text-sm text-neutral-200 focus:outline-none focus:border-orange-500 transition-colors font-mono"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label for="inquiry_type" class="block text-xs uppercase tracking-widest text-neutral-400">
+                Inquiry Classification <span class="text-orange-500">*</span>
+              </label>
+              <select 
+                id="inquiry_type" 
+                name="inquiry_type" 
+                required
+                class="w-full bg-neutral-950 border border-neutral-800 px-4 py-3 text-sm text-neutral-200 focus:outline-none focus:border-orange-500 transition-colors font-mono"
+              >
+                <option value="" disabled selected>Select classification...</option>
+                <option value="closed_batch">Closed Batch & Order Status</option>
+                <option value="technical_armor">Technical Armor Specifications</option>
+                <option value="tribe_alliance">Tribe & Community Alliance</option>
+                <option value="general">General Operational Inquiry</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label for="message" class="block text-xs uppercase tracking-widest text-neutral-400">
+                Transmission Message <span class="text-orange-500">*</span>
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required
+                placeholder="Detail your inquiry or feedback..."
+                class="w-full bg-neutral-950 border border-neutral-800 px-4 py-3 text-sm text-neutral-200 focus:outline-none focus:border-orange-500 transition-colors font-sans resize-none"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full bg-orange-600 hover:bg-orange-500 text-neutral-950 font-mono text-xs font-bold tracking-widest uppercase py-4 transition-colors duration-200 cursor-pointer"
+            >
+              Transmit Inquiry
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-neutral-800 py-12 px-6 md:px-12 text-center text-xs text-neutral-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <span>© 2026 TAILWEAR. ALL RIGHTS RESERVED.</span>
+      <span class="text-orange-500">NOT MADE TO FIT IN.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
