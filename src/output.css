@@ -1273,3 +1273,71 @@
     }
   }
 }
+@keyframes heroSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(12%) scale(1.05);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+
+  28% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+
+  36% {
+    opacity: 0;
+    transform: translateX(-18%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-18%) scale(1);
+  }
+}
+
+@keyframes heroSlideZoom {
+  0% {
+    opacity: 0;
+    transform: translateX(12%) scale(2.4);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0%) scale(2.5);
+  }
+
+  28% {
+    opacity: 1;
+    transform: translateX(0%) scale(2.6);
+  }
+
+  36% {
+    opacity: 0;
+    transform: translateX(-18%) scale(2.6);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-18%) scale(2.6);
+  }
+}
+
+.slide-bg-1 {
+  opacity: 0;
+  animation: heroSlide 12s infinite ease-in-out 0s;
+}
+
+.slide-bg-2 {
+  opacity: 0;
+  animation: heroSlideZoom 12s infinite ease-in-out 4s;
+}
+
+.slide-bg-3 {
+  opacity: 0;
+  animation: heroSlide 12s infinite ease-in-out 8s;
+}
